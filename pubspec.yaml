@@ -1,0 +1,15 @@
+name: kg_kyattha_calculator
+description: Offline Myanmar KG to Kyattha price calculator with custom 1 KG = 63 Kyattha conversion.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.20.2
+
+flutter:
+  uses-material-design: true
