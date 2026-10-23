@@ -21,7 +21,7 @@ class _MileConverterPageState extends State<MileConverterPage> {
 
   String _format(double value) {
     final fixed = value.toStringAsFixed(4);
-    return fixed.replaceFirst(RegExp(r'\.?0+$'), '');
+    return fixed.replaceFirst(RegExp(r'0+$'), '').replaceFirst(RegExp(r'\.$'), '');
   }
 
   void _swap() {
