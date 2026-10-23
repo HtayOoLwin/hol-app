@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dashboard_page.dart';
 
 void main() => runApp(const KyatthaApp());
 
@@ -10,18 +11,18 @@ class KyatthaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'KG to Kyattha Calculator',
+      title: 'HOL Unit Converter',
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF176B56)),
-        scaffoldBackgroundColor: const Color(0xFFF6F8F7),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF6840CD)),
+        scaffoldBackgroundColor: const Color(0xFFF9F7FF),
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: Colors.white,
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
         ),
       ),
-      home: const CalculatorPage(),
+      home: const DashboardPage(),
     );
   }
 }
@@ -115,7 +116,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('KG to Kyattha Calculator'),
-        backgroundColor: const Color(0xFFF6F8F7),
+        backgroundColor: const Color(0xFFF9F7FF),
       ),
       body: SafeArea(
         child: ListView(
